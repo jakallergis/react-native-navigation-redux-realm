@@ -66,13 +66,16 @@ const RouteConfigs = {
     navigationOptions: {
       header: {
         visible: true,
-        title: 'Featured',
-        left: undefined
+        title: 'Featured'
       }
     }
   }
 }
 
-export const Stacks = StackNavigator(RouteConfigs)
+const StackNavigatorConfig = {
+  initialRouteName: 'Featured'
+}
+
+export const Stacks = StackNavigator(RouteConfigs, StackNavigatorConfig)
 
 export default connect(mapStateToProps, mapDispatchToProps)(RootStack)

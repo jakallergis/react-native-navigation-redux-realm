@@ -8,7 +8,7 @@ export default class FeaturedList extends Component {
     super(props)
     this.state = {dataSource: this.recreateDataSource(this.props.navigation.state.params)}
   }
-  
+
   recreateDataSource(newItems) {
     const ds = new ListView.DataSource({rowHasChanged: (r1, r2) => r1 !== r2})
     return ds.cloneWithRows(newItems)

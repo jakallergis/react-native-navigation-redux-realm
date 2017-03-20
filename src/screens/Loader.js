@@ -2,7 +2,6 @@
 import React, { Component } from 'react'
 import { StyleSheet, Image, Text } from 'react-native'
 import LinearGradient from 'react-native-linear-gradient'
-import { featuredURL } from '../util/Constants'
 
 export default class Loader extends Component {
   componentDidUpdate() {
